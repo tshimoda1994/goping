@@ -6,6 +6,7 @@ import (
 	"os/signal"
 
 	"github.com/go-ping/ping"
+
 	"github.com/spf13/cobra"
 )
 
