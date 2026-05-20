@@ -55,7 +55,8 @@ var rootCmd = &cobra.Command{
 		fmt.Printf("PING %s (%s):\n", pinger.Addr(), pinger.IPAddr())
 		err = pinger.Run()
 		if err != nil {
-			panic(err)
+			fmt.Printf("ERROR: %s\n", err.Error())
+			os.Exit(1)
 		}
 	},
 }
